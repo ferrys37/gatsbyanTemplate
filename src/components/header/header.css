@@ -1,0 +1,113 @@
+/************************
+ * Author: [MR FERRY™]  *
+ * September 2020       *
+ ************************/
+
+.head-main {
+  background: #343a40;
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.head-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 1.5em;
+}
+
+.bottom-bar {
+  width: 100%;
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.mobile-pages-main {
+  width: 100%;
+  background: white;
+  display: none;
+}
+.head-logo {
+  font-family: "Work Sans", serif;
+  font-size: 1.75rem;
+  margin: 0 0 0 1.5rem;
+}
+
+small {
+  font-family: "Work Sans", serif;
+}
+
+.mobile-bio-main {
+  background: #343a40;
+  display: none;
+  padding-bottom: 0.5rem;
+}
+
+.bio-picture {
+  margin: 0 0 0 1.5rem;
+  max-width: 75px;
+  max-height: 75px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .bottom-bar {
+    display: flex;
+  }
+  .social-links {
+    display: none;
+  }
+
+  .mobile-pages-main {
+    display: block;
+  }
+
+  .mobile-bio-main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mobile-social {
+    justify-content: space-evenly;
+  }
+
+  .head-elements {
+    padding: 0.5rem 0 0 0;
+  }
+
+  .head-logo {
+    font-size: 1.25rem;
+  }
+}
+
+.menu-button {
+  color: #fff;
+  display: block;
+  margin: 0 0.5rem;
+}
+
+.header-link {
+  color: white;
+  text-decoration: none;
+}
+
+.bio-letter {
+  margin: 0 auto 0 1rem;
+}
+
+.bio-name {
+  margin-bottom: 0.25rem;
+}
